@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Airline Management System</title>
+        <link rel="stylesheet" href="bookstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        
+        <section class="header">
+            <nav>
+                <a href="Index.html"><img src="logo1.png" width="200" height="200"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="file:///C:/Users/itna/Desktop/AirForce/Index.html">Home</a></li>
+                        <li><a href="file:///C:/Users/itna/Desktop/AirForce/About.html">About</a></li>
+                        <li><a href="file:///C:/Users/itna/Desktop/AirForce/Contact.html">Contact</a></li>
+                        <li><a href="file:///C:/Users/itna/Desktop/AirForce/Destination.html">Destination</a></li>
+                        <li><a href="file:///C:/Users/itna/Desktop/AirForce/tick.html">Booking</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Book your Ticket for AirStar</h1>
+                <p>Having the world best AirStar airline is one of the most faster growing company in the world.
+                <br>It also provide's the best and a fast booking service you will ever experience.
+                </p>
+            </div>
+        </section>
+        <div class="container">
+            <form id="form" action="/">
+                <h1>Booking</h1>
+                <form action="" method="post">
+
+                <div class="input-control">
+                <label for="date">Departure Date:</label>
+                <input type="date" id="date" name="date" placeholder="date" required>
+                <div class="error"></div>
+            </div> 
+                
+            <div class="input-control">
+                <label for="time">Departure Time:</label>
+                <input type="time" id="time" name="time" placeholder="Time" required>
+                <div class="error"></div>
+            </div>
+    
+            <div class="input-control">
+                <label for="text">Departure From:</label>
+                <select id="input-group" id="from" name="from" style="background: white;">
+    <option value="London England">London, England</option>
+    <option value="Berlin Germany">Berlin, Germany</option>
+    <option value="New York USA">New York, USA</option>
+    <option value="Tokyo Japan">Tokyo, Japan</option>
+    <option value="Moscow Russia">Moscow, Russia</option>
+    <option value="Beijing China">Beijing, China</option>
+    <option value="Mumbai India">Mumbai, India</option>
+    <option value="Karachi Pakistan">Karachi, Pakistan</option>
+    <option value="Seoul South Korea">Seoul, South Korea</option>
+    <option value="Manchester England">Manchester, England</option>
+    <option value="Istanbul Turkey">Istanbul, Turkey</option>
+    <option value="Tehran Iran">Tehran, Iran</option>
+    <option value="Ryiadh Saudi Arabia">Ryiadh, Saudi Arabia</option>
+    <option value="Cairo Egypt">Cairo, Egypt</option>
+    <option value="Paris France">Paris, France</option>
+    <option value="Madrid Spain">Madrid, Spain</option>
+    <option value="Frankfurt Germany">Frankfurt, Germany</option>
+    </select>
+    <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="text">Destination To:</label>
+        <select id="input-group" id="to" name="to" style="background: white;">
+        <option value="Frankfurt Germany">Frankfurt, Germany</option>
+        <option value="Madrid Spain">Madrid, Spain</option>
+        <option value="Paris France">Paris, France</option>
+        <option value="Cairo Egypt">Cairo, Egypt</option>
+        <option value="Ryiadh Saudi Arabia">Ryiadh, Saudi Arabia</option>
+        <option value="Tehran Iran">Tehran, Iran</option>
+        <option value="Istanbul Turkey">Istanbul, Turkey</option>
+        <option value="Manchester England">Manchester, England</option>
+        <option value="Seoul South Korea">Seoul, South Korea</option>
+        <option value="Karachi Pakistan">Karachi, Pakistan</option>
+        <option value="Mumbai India">Mumbai, India</option>
+        <option value="Beijing China">Beijing, China</option>
+        <option value="Moscow Russia">Moscow, Russia</option>
+        <option value="Tokyo Japan">Tokyo, Japan</option>
+        <option value="New York USA">New York, USA</option>
+        <option value="Berlin Germany">Berlin, Germany</option>
+        <option value="London England">London, England</option>
+    </select>
+    <div class="error"></div>
+    </div>
+
+
+    <div class="input-control">
+        <label for="text">Please Select Airline:</label>
+        <select id="input-group" id="airline" name="airline" style="background: white;">
+            <option value="Aegean Airlines">Aegean Airlines</option>
+            <option value="Aer Lingus">Aer Lingus</option>
+            <option value="Aeroflot">Aeroflot</option>
+            <option value="Aeromexico">Aeromexico</option>
+            <option value="Air Algerie">Air Algerie</option>
+            <option value="Air Astana">Air Astana</option>
+            <option value="Air Canada">Air Canada</option>
+            <option value="Air China">Air China</option>
+            <option value="Air France">Air France</option>
+            <option value="Air India">Air India</option>
+            <option value="Air Malta">Air Malta</option>
+            <option value="Air Mauritius">Air Mauritius</option>
+            <option value="Air New Zealand">Air New Zealand</option>
+            <option value="Air Serbia">Air Serbia</option>
+            <option value="Alitalia">Alitalia</option>
+            <option value="American Airlines">American Airline</option>
+            <option value="Asiana Airlines">Asiana Airlines</option>
+            <option value="Austrian Airlines">Austrian Airlines</option>
+            <option value="Avianca">Avianca</option>
+            <option value="Azerbaijan Airlines">Azerbaijan Airlines</option>
+            <option value="British Airways">British Airways</option>
+            <option value="Brussels Airlines">Burssels Airlines</option>
+            <option value="Bulgaria Air">Bulgaria Air</option>
+            <option value="Belgium Airlines">Belgium Airline</option>
+            <option value="Crotia Airlines">Crotia Airlines</option>
+            <option value="Delta Airlines">Delta Airlines</option>
+            <option value="Egyp Airlines">Egypt Airlines</option>
+            <option value="Emirates Airlines">Emirates Airlines</option>
+            <option value="Ethiopian Airlines">Ethiopian Airlines</option>
+            <option value="Eurowing">Eurowing</option>
+            <option value="Finnair">Finnair</option>
+            <option value="Gulf Air">Gulf Air</option>
+            <option value="Hainan Airlines">Hainan Airlines</option>
+            <option value="Iberia">Iberia</option>
+            <option value="Icelandair">Icelandair</option>
+            <option value="Iran Airline">Iran Airline</option>
+            <option value="Japan Airlines">Japan Airlines</option>
+            <option value="Jet Airwyas">Jet Airways</option>
+            <option value="Kenya Airways">Kenya Airways</option>
+            <option value="KLM">KLM Airlines</option>
+            <option value="Korean Air">Korean Air</option>
+            <option value="Kuwait Airways">Kuwait Airways</option>
+            <option value="Lufthansa">Lufthansa</option>
+            <option value="Malaysia Airlines">Malaysia Airlines</option>
+            <option value="Middle East Airlines">Middle East Airlines</option>
+            <option value="Oman Air">Oman Air</option>
+            <option value="Pakistan Internation Airline">PIA</option>
+            <option value="Philippine Airlines">Philippine Airlines</option>
+            <option value="Qatar Airways">Qatar Airways</option>
+            <option value="Royal Air Maroc">Royal Air Maroc</option>
+            <option value="Royal Brunei Airlines">Royal Brunei Airlines</option>
+            <option value="Royal Jordanian">Royal Jordanian</option>
+            <option value="Saudi Airlines">Saudi Airlines</option>
+            <option value="South African Airlines">South African Airlines</option>
+            <option value="SriLankan Airlines">SriLankan Airlines</option>
+            <option value="Swiss International AirLines">Swiss International Airlines</option>
+            <option value="Turkish Airlines">Turkish Airlines</option>
+            <option value="United Airlines">United Airlines</option>
+            <option value="Universal Fly">Universal Fly</option>
+        </select>
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="text">Please Select your seat type:</label>
+        <select id="input-group" id="seat" name="seat" style="background: white;">
+            <option value="">Economy Class</option>
+            <option value="">Business Class</option>
+            <option value="">First Class</option>
+        </select>
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+    <label for="text">Please Select your Seat Number Row</label>
+    <select id="input-group" id="row" name="row" style="background: white;">
+    <option value="1A">1A</option>
+    <option value="1B">1B</option>
+    <option value="1C">1C</option>
+    <option value="1D">1D</option>
+    <option value="1E">1E</option>
+    <option value="2A">2A</option>
+    <option value="2B">2B</option>
+    <option value="2C">2C</option>
+    <option value="2D">2D</option>
+    <option value="2E">2E</option>
+    <option value="3A">3A</option>
+    <option value="3B">3B</option>
+    <option value="3C">3C</option>
+    <option value="3D">3D</option>
+    <option value="3E">3E</option>
+    <option value="4A">4A</option>
+    <option value="4B">4B</option>
+    <option value="4C">4C</option>
+    <option value="4D">4D</option>
+    <option value="4E">4E</option>
+    <option value="5A">5A</option>
+    <option value="5B">5B</option>
+    <option value="5C">5C</option>
+    <option value="5D">5D</option>
+    <option value="5E">5E</option>
+    <option value="6A">6A</option>
+    <option value="6B">6B</option>
+    <option value="6C">6C</option>
+    <option value="6D">6D</option>
+    <option value="6E">6E</option>
+    <option value="7A">7A</option>
+    <option value="7B">7B</option>
+    <option value="7C">7C</option>
+    <option value="7D">7D</option>
+    <option value="7E">7E</option>
+    <option value="8A">8A</option>
+    <option value="8B">8B</option>
+    <option value="8C">8C</option>
+    <option value="8D">8D</option>
+    <option value="8E">8E</option>
+    <option value="9A">9A</option>
+    <option value="9B">9B</option>
+    <option value="9C">9C</option>
+    <option value="9D">9D</option>
+    <option value="9E">9E</option>
+    <option value="10A">10A</option>
+    <option value="10B">10B</option>
+    <option value="10C">10C</option>
+    <option value="10D">10D</option>
+    <option value="10E">10E</option>
+    </select>
+    <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="text">Please enter the following</label>
+        <input type="number" id="input" placeholder="Adult">
+        <input type="number" id="input" placeholder="Children(2-10years)">
+        <input type="number" id="input" placeholder="infant(under 2years)">
+    </div>
+
+    <div class="input-control">
+        <span id="input-group" class="text-primary">Select Your Fare:</span>
+        <input type="radio" id="input-group" name="r">
+        <label class="text-white" for="input-group">One Way</label>
+        <input type="radio" id="input-group" name="r">
+        <label class="text-white" for="input-group">Round Trip</label>
+    </div>
+
+    <div class="input-control">
+        <label for="date">Return Date:</label>
+        <input type="date" id="date" name="date" placeholder="date" required>
+        <div class="error"></div>
+    </div> 
+        
+    <div class="input-control">
+        <label for="time">Return Time:</label>
+        <input type="time" id="time" name="time" placeholder="Time" required>
+        <div class="error"></div>
+        <input type="submit">
+    </div>
+
+    </form>
+
+    <footer>
+        <div class="footer-col">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Customer Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>About AirStar</h4>
+            <ul>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Extras</h4>
+            <ul>
+                <li><a href="#">Media Centre</a></li>
+                <li><a href="#">Business progammes</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+
+</form>
+</body>
+</html>

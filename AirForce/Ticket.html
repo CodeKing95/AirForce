@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="ticket.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Booking</h1>
+            
+            <div class="input-control">
+            <label for="date">Departure Date:</label>
+            <input type="date" id="date" name="date" placeholder="date" required>
+            <div class="error"></div>
+        </div> 
+            
+        <div class="input-control">
+            <label for="time">Departure Time:</label>
+		    <input type="time" id="time" name="time" placeholder="Time" required>
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label for="text">Departure From:</label>
+            <select id="input-group" style="background: white;">
+<option value="London England">London, England</option>
+<option value="Berlin Germany">Berlin, Germany</option>
+<option value="New York USA">New York, USA</option>
+<option value="Tokyo Japan">Tokyo, Japan</option>
+<option value="Moscow Russia">Moscow, Russia</option>
+<option value="Beijing China">Beijing, China</option>
+<option value="Mumbai India">Mumbai, India</option>
+<option value="Karachi Pakistan">Karachi, Pakistan</option>
+<option value="Seoul South Korea">Seoul, South Korea</option>
+<option value="Manchester England">Manchester, England</option>
+<option value="Istanbul Turkey">Istanbul, Turkey</option>
+<option value="Tehran Iran">Tehran, Iran</option>
+<option value="Ryiadh Saudi Arabia">Ryiadh, Saudi Arabia</option>
+<option value="Cairo Egypt">Cairo, Egypt</option>
+<option value="Paris France">Paris, France</option>
+<option value="Madrid Spain">Madrid, Spain</option>
+<option value="Frankfurt Germany">Frankfurt, Germany</option>
+</select>
+<div class="error"></div>
+</div>
+
+            <div class="input-control">
+            <label for="text">Destination To:</label>
+            <select id="input-group" style="background: white;">
+            <option value="Frankfurt Germany">Frankfurt, Germany</option>
+            <option value="Madrid Spain">Madrid, Spain</option>
+            <option value="Paris France">Paris, France</option>
+            <option value="Cairo Egypt">Cairo, Egypt</option>
+            <option value="Ryiadh Saudi Arabia">Ryiadh, Saudi Arabia</option>
+            <option value="Tehran Iran">Tehran, Iran</option>
+            <option value="Istanbul Turkey">Istanbul, Turkey</option>
+            <option value="Manchester England">Manchester, England</option>
+            <option value="Seoul South Korea">Seoul, South Korea</option>
+            <option value="Karachi Pakistan">Karachi, Pakistan</option>
+            <option value="Mumbai India">Mumbai, India</option>
+            <option value="Beijing China">Beijing, China</option>
+            <option value="Moscow Russia">Moscow, Russia</option>
+            <option value="Tokyo Japan">Tokyo, Japan</option>
+            <option value="New York USA">New York, USA</option>
+            <option value="Berlin Germany">Berlin, Germany</option>
+            <option value="London England">London, England</option>
+        </select>
+        <div class="error"></div>
+        </div>
+
+
+            <div class="input-control">
+                <select id="input-group" style="background: white;">
+                    <option value="">Please Select Airline</option>
+                    <option value="Aegean Airlines">Aegean Airlines</option>
+                    <option value="Aer Lingus">Aer Lingus</option>
+                    <option value="Aeroflot">Aeroflot</option>
+                    <option value="Aeromexico">Aeromexico</option>
+                    <option value="Air Algerie">Air Algerie</option>
+                    <option value="Air Astana">Air Astana</option>
+                    <option value="Air Canada">Air Canada</option>
+                    <option value="Air China">Air China</option>
+                    <option value="Air France">Air France</option>
+                    <option value="Air India">Air India</option>
+                    <option value="Air Malta">Air Malta</option>
+                    <option value="Air Mauritius">Air Mauritius</option>
+                    <option value="Air New Zealand">Air New Zealand</option>
+                    <option value="Air Serbia">Air Serbia</option>
+                    <option value="Alitalia">Alitalia</option>
+                    <option value="American Airlines">American Airline</option>
+                    <option value="Asiana Airlines">Asiana Airlines</option>
+                    <option value="Austrian Airlines">Austrian Airlines</option>
+                    <option value="Avianca">Avianca</option>
+                    <option value="Azerbaijan Airlines">Azerbaijan Airlines</option>
+                    <option value="British Airways">British Airways</option>
+                    <option value="Brussels Airlines">Burssels Airlines</option>
+                    <option value="Bulgaria Air">Bulgaria Air</option>
+                    <option value="Belgium Airlines">Belgium Airline</option>
+                    <option value="Crotia Airlines">Crotia Airlines</option>
+                    <option value="Delta Airlines">Delta Airlines</option>
+                    <option value="Egyp Airlines">Egypt Airlines</option>
+                    <option value="Emirates Airlines">Emirates Airlines</option>
+                    <option value="Ethiopian Airlines">Ethiopian Airlines</option>
+                    <option value="Eurowing">Eurowing</option>
+                    <option value="Finnair">Finnair</option>
+                    <option value="Gulf Air">Gulf Air</option>
+                    <option value="Hainan Airlines">Hainan Airlines</option>
+                    <option value="Iberia">Iberia</option>
+                    <option value="Icelandair">Icelandair</option>
+                    <option value="Iran Airline">Iran Airline</option>
+                    <option value="Japan Airlines">Japan Airlines</option>
+                    <option value="Jet Airwyas">Jet Airways</option>
+                    <option value="Kenya Airways">Kenya Airways</option>
+                    <option value="KLM">KLM Airlines</option>
+                    <option value="Korean Air">Korean Air</option>
+                    <option value="Kuwait Airways">Kuwait Airways</option>
+                    <option value="Lufthansa">Lufthansa</option>
+                    <option value="Malaysia Airlines">Malaysia Airlines</option>
+                    <option value="Middle East Airlines">Middle East Airlines</option>
+                    <option value="Oman Air">Oman Air</option>
+                    <option value="Pakistan Internation Airline">PIA</option>
+                    <option value="Philippine Airlines">Philippine Airlines</option>
+                    <option value="Qatar Airways">Qatar Airways</option>
+                    <option value="Royal Air Maroc">Royal Air Maroc</option>
+                    <option value="Royal Brunei Airlines">Royal Brunei Airlines</option>
+                    <option value="Royal Jordanian">Royal Jordanian</option>
+                    <option value="Saudi Airlines">Saudi Airlines</option>
+                    <option value="South African Airlines">South African Airlines</option>
+                    <option value="SriLankan Airlines">SriLankan Airlines</option>
+                    <option value="Swiss International AirLines">Swiss International Airlines</option>
+                    <option value="Turkish Airlines">Turkish Airlines</option>
+                    <option value="United Airlines">United Airlines</option>
+                    <option value="Universal Fly">Universal Fly</option>
+                </select>
+                
+                <div class="error"></div>
+            </div>
+
+
+
+
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password again</label>
+                <input id="password2" name="password2" type="password">
+                <div class="error"></div>
+                </div>
+                <button type="submit">Sign Up</button>      
+        </form>
+    </div>
+</body>
+</html>
+
+    
